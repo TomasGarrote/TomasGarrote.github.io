@@ -1,0 +1,204 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: white;
+  color: black;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+.header .topbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.header .topbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: rgb(54, 125, 206);
+}
+.header .topbar .date {
+  font-size: 0.9rem;
+  color: grey;
+}
+.navbar {
+  display: none;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.navbar a {
+  font-weight: 600;
+  color:rgb(54, 125, 206);
+}
+.menu-toggle {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.top-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero,
+.article-card,
+.ad-card,
+.secondary-card {
+  background: rgba(235, 231, 231, 0.87);
+  padding: 1rem;
+  border-radius: 12px;
+  
+}
+.hero figure {
+  margin: 0 0 1rem;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.hero h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: rgb(4, 47, 77);
+}
+.hero p {
+  margin: 0;
+  color: grey;
+  line-height: 1.6;
+}
+.hero a,
+.article-card a,
+.secondary-card a {
+  font-weight: 700;
+  color: rgb(54, 125, 206);
+}
+.secondary {
+  display: grid;
+  gap: 1rem;
+}
+.article-card h3,
+.secondary-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: rgb(4, 47, 77);
+}
+.article-card p {
+  margin: 0 0 0.75rem;
+  color: grey;
+  line-height: 1.5;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ad-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 12rem;
+}
+.ad-card span {
+  font-size: 0.8rem;
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.ad-card strong {
+  font-size: 1.2rem;
+  color: rgb(4, 47, 77);
+}
+.main-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.section-head h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: rgb(4, 47, 77);
+}
+.section-head a {
+  font-size: 0.9rem;
+  color: rgb(54, 125, 206);
+}
+.footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: grey;
+}
+@media (min-width: 760px) {
+  .navbar {
+    display: flex;
+    margin-top: 0;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .main-grid {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .top-grid {
+    flex: 2;
+    gap: 1rem;
+  }
+  .hero {
+    flex: 1;
+  }
+  .sidebar {
+    flex: 1;
+  }
+  .secondary {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .container {
+    padding: 2rem;
+  }
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+  .article-card h3,
+  .secondary-card h3 {
+    font-size: 1.2rem;
+  }
+}
